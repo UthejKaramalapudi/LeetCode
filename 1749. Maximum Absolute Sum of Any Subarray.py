@@ -9,5 +9,5 @@ class Solution:
             min_sum = min(min_sum, curr_sum)
             max_sum = max(max_sum, curr_sum)
 
-        abs_maxSum = max_sum - min_sum
+        abs_maxSum = abs(max_sum - min_sum)
         return abs_maxSum
