@@ -1,8 +1,7 @@
-def missingNumber(nums):
-    nums = sorted(nums)
-    i = 0
-    
-    for num in nums:
-        if i != num:
-            return i
-        i = i + 1
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        expected_sum = n * (n + 1) // 2
+        actual_sum = sum(nums)
+        
+        return expected_sum - actual_sum
